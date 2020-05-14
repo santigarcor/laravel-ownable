@@ -17,6 +17,8 @@ composer require santigarcor/laravel-ownable
 Then you have to use the `OwnsModels` trait in the models you want to check if they own other models.
 
 ```php
+<?php
+
 use Ownable\OwnsModels;
 use Illuminate\Database\Eloquent\Model;
 
@@ -31,6 +33,8 @@ You are now ready to use it.
 ## Usage
 
 ```php
+<?php
+
 use Ownable\OwnsModels;
 use Illuminate\Database\Eloquent\Model;
 
@@ -59,6 +63,8 @@ if ($user->owns($video, 'the_user_id')){}
 If for some reason the ownership check needs a more complex logic, you can implement the `Ownable` interface inside your ownable objects and then you can define your custom logic in the `isOwnedBy` method. When this method is called the object that called the `owns` method is passed as an attribute to the `isOwnedBy` method.
 
 ```php
+<?php
+
 use Ownable\OwnsModels;
 use Illuminate\Database\Eloquent\Model;
 
@@ -69,10 +75,8 @@ class User extends Model
 
 use Ownable\Contracts\Ownable;
 
-class Video extends Model
+class Video extends Model implements Ownable
 {
-    use Ownable;
-
     public function isOwnedBy($owner): bool
     {
         if ($owner instanceof User) {
