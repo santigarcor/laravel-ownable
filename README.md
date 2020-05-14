@@ -1,6 +1,9 @@
 # Check model ownership for Laravel
 
 ![tests](https://github.com/santigarcor/laravel-ownable/workflows/tests/badge.svg?branch=master)
+[![Latest Stable Version](https://poser.pugx.org/santigarcor/laravel-ownable/v/stable)](https://packagist.org/packages/santigarcor/laravel-ownable)
+[![Total Downloads](https://poser.pugx.org/santigarcor/laravel-ownable/downloads)](https://packagist.org/packages/santigarcor/laravel-ownable)
+[![License](https://poser.pugx.org/santigarcor/laravel-ownable/license)](https://packagist.org/packages/santigarcor/laravel-ownable)
 
 This trait allows you to check if a model owns some other model in your application.
 
