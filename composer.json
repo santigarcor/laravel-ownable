@@ -1,5 +1,5 @@
 {
-    "name": "santiago/laravel-ownable",
+    "name": "santigarcor/laravel-ownable",
     "description": "Simple trait to manage the ownershipt of models/objects",
     "keywords": ["laravel", "ownership", "ownable", "owns"],
     "require": {
