@@ -60,7 +60,7 @@ if ($user->doesntOwns($video)){}
 if ($user->owns($video, 'the_user_id')){}
 ```
 
-If for some reason the ownership check needs a more complex logic, you can implement the `Ownable` interface inside your ownable objects and then you can define your custom logic in the `isOwnedBy` method. When this method is called the object that called the `owns` method is passed as an attribute to the `isOwnedBy` method.
+If for some reason the ownership check needs a more complex logic, you can implement the `Ownable` interface inside your ownable objects and then you can define your custom logic in the `isOwnedBy` method. When this method is called, the object that called the `owns` method is passed as an attribute to the `isOwnedBy` method.
 
 ```php
 <?php
