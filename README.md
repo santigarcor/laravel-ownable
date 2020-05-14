@@ -5,7 +5,7 @@
 [![Total Downloads](https://poser.pugx.org/santigarcor/laravel-ownable/downloads)](https://packagist.org/packages/santigarcor/laravel-ownable)
 [![License](https://poser.pugx.org/santigarcor/laravel-ownable/license)](https://packagist.org/packages/santigarcor/laravel-ownable)
 
-This trait allows you to check if a model owns some other model in your application.
+This trait allows you to check if a model owns some other model in your Laravel application.
 
 ## Installation
 
