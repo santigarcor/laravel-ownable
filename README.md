@@ -1,5 +1,7 @@
 # Check model ownership for Laravel
 
+![tests](https://github.com/santigarcor/laravel-ownable/workflows/tests/badge.svg?branch=master)
+
 This trait allows you to check if a model owns some other model in your application.
 
 ## Installation
