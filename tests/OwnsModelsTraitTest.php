@@ -7,7 +7,7 @@ use Ownable\Tests\Models\User;
 use Ownable\Tests\Models\Other;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 
-class OwnsModelTraitTest extends TestCase
+class OwnsModelsTraitTest extends TestCase
 {
     use DatabaseTransactions;
 
@@ -60,5 +60,6 @@ class OwnsModelTraitTest extends TestCase
 
         $this->assertFalse($user->owns($otherModels->first(), null, true));
         $this->assertFalse($user->owns($otherModels->last(), null, true));
+        $this->assertTrue($user->doesntOwns($otherModels->last(), null, true));
     }
 }

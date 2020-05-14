@@ -4,7 +4,7 @@ namespace Ownable;
 
 use Ownable\Contracts\Ownable;
 
-trait OwnsModel
+trait OwnsModels
 {
     /**
      * Check if the model owns the given model/object.
@@ -30,9 +30,10 @@ trait OwnsModel
      *
      * @param mixed $model
      * @param string $foreignKey
+     * @param bool $overrideContract If true the Ownable contract is implemented it won't be used.
      * @return bool
      */
-    public function doesntOwns($model, $foreignKey = null)
+    public function doesntOwns($model, $foreignKey = null, $overrideContract = false)
     {
         return !$this->owns($model, $foreignKey);
     }

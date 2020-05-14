@@ -2,12 +2,12 @@
 
 namespace Ownable\Tests\Models;
 
-use Ownable\OwnsModel;
+use Ownable\OwnsModels;
 use Illuminate\Database\Eloquent\Model;
 
 class User extends Model
 {
-    use OwnsModel;
+    use OwnsModels;
 
     public $guarded = [];
     public $timestamps = false;
