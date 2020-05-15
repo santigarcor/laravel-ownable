@@ -54,7 +54,7 @@ $video = Video::first();
 if ($user->owns($video)){}
 
 // Check If the user doesn't owns the video
-if ($user->doesntOwns($video)){}
+if ($user->doesntOwn($video)){}
 
 // Check If the user owns the video but the foreign key is the_user_id
 if ($user->owns($video, 'the_user_id')){}

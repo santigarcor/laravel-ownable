@@ -33,7 +33,7 @@ trait OwnsModels
      * @param bool $overrideContract If true the Ownable contract is implemented it won't be used.
      * @return bool
      */
-    public function doesntOwns($model, $foreignKey = null, $overrideContract = false)
+    public function doesntOwn($model, $foreignKey = null, $overrideContract = false)
     {
         return !$this->owns($model, $foreignKey);
     }

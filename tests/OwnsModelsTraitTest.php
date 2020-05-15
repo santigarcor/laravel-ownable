@@ -34,14 +34,14 @@ class OwnsModelsTraitTest extends TestCase
         $this->assertFalse($user->owns($posts->last()));
     }
 
-    public function testDoesntOwnsMethod()
+    public function testdoesntOwnMethod()
     {
         $user = User::first();
         $posts = Post::all();
 
-        $this->assertFalse($user->doesntOwns($posts->first()));
-        $this->assertTrue($user->doesntOwns($posts->last()));
-        $this->assertTrue($user->doesntOwns($posts->first(), 'other_key'));
+        $this->assertFalse($user->doesntOwn($posts->first()));
+        $this->assertTrue($user->doesntOwn($posts->last()));
+        $this->assertTrue($user->doesntOwn($posts->first(), 'other_key'));
     }
 
     public function testItShouldUseTheInterfaceImplementationIfClassImplementsInterface()
@@ -60,6 +60,6 @@ class OwnsModelsTraitTest extends TestCase
 
         $this->assertFalse($user->owns($otherModels->first(), null, true));
         $this->assertFalse($user->owns($otherModels->last(), null, true));
-        $this->assertTrue($user->doesntOwns($otherModels->last(), null, true));
+        $this->assertTrue($user->doesntOwn($otherModels->last(), null, true));
     }
 }
